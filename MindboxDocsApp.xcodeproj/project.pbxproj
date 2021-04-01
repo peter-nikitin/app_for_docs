@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63E35E8B60C2D6591CB0E0D6 /* Pods_MindboxDocsAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22ECF51B9499279A71F153C4 /* Pods_MindboxDocsAppTests.framework */; };
 		6F30E4B82616406700EA237D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F30E4B72616406700EA237D /* AppDelegate.swift */; };
 		6F30E4BA2616406700EA237D /* DocumentBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F30E4B92616406700EA237D /* DocumentBrowserViewController.swift */; };
 		6F30E4BC2616406700EA237D /* DocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F30E4BB2616406700EA237D /* DocumentViewController.swift */; };
@@ -16,6 +17,15 @@
 		6F30E4C62616406800EA237D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F30E4C42616406800EA237D /* LaunchScreen.storyboard */; };
 		6F30E4D12616406800EA237D /* MindboxDocsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F30E4D02616406800EA237D /* MindboxDocsAppTests.swift */; };
 		6F30E4DC2616406800EA237D /* MindboxDocsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F30E4DB2616406800EA237D /* MindboxDocsAppUITests.swift */; };
+		6FA012CA2616445A001526CC /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA012C92616445A001526CC /* NotificationService.swift */; };
+		6FA012CE2616445A001526CC /* MindboxNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6FA012C72616445A001526CC /* MindboxNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6FA012DF26164478001526CC /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FA012DE26164478001526CC /* UserNotifications.framework */; };
+		6FA012E126164478001526CC /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FA012E026164478001526CC /* UserNotificationsUI.framework */; };
+		6FA012E426164478001526CC /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA012E326164478001526CC /* NotificationViewController.swift */; };
+		6FA012E726164478001526CC /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FA012E526164478001526CC /* MainInterface.storyboard */; };
+		6FA012EB26164478001526CC /* MindboxContentExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6FA012DC26164478001526CC /* MindboxContentExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		841943667C2ECC2D9B8DF4DA /* Pods_MindboxDocsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B80B2C896ABCC910D4A7205 /* Pods_MindboxDocsApp.framework */; };
+		A2C548EF560C842C0362BBE0 /* Pods_MindboxDocsApp_MindboxDocsAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FE18FAB86B8AC816902E36 /* Pods_MindboxDocsApp_MindboxDocsAppUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,9 +43,39 @@
 			remoteGlobalIDString = 6F30E4B32616406700EA237D;
 			remoteInfo = MindboxDocsApp;
 		};
+		6FA012CC2616445A001526CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F30E4AC2616406700EA237D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6FA012C62616445A001526CC;
+			remoteInfo = MindboxNotificationServiceExtension;
+		};
+		6FA012E926164478001526CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F30E4AC2616406700EA237D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6FA012DB26164478001526CC;
+			remoteInfo = MindboxContentExtension;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		6FA012D22616445A001526CC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6FA012EB26164478001526CC /* MindboxContentExtension.appex in Embed App Extensions */,
+				6FA012CE2616445A001526CC /* MindboxNotificationServiceExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		22ECF51B9499279A71F153C4 /* Pods_MindboxDocsAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MindboxDocsAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F30E4B42616406700EA237D /* MindboxDocsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindboxDocsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F30E4B72616406700EA237D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F30E4B92616406700EA237D /* DocumentBrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentBrowserViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +91,26 @@
 		6F30E4D72616406800EA237D /* MindboxDocsAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MindboxDocsAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F30E4DB2616406800EA237D /* MindboxDocsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindboxDocsAppUITests.swift; sourceTree = "<group>"; };
 		6F30E4DD2616406800EA237D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FA012C2261643E4001526CC /* MindboxDocsApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MindboxDocsApp.entitlements; sourceTree = "<group>"; };
+		6FA012C72616445A001526CC /* MindboxNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MindboxNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FA012C92616445A001526CC /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		6FA012CB2616445A001526CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FA012D726164461001526CC /* MindboxNotificationServiceExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MindboxNotificationServiceExtension.entitlements; sourceTree = "<group>"; };
+		6FA012DC26164478001526CC /* MindboxContentExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MindboxContentExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FA012DE26164478001526CC /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		6FA012E026164478001526CC /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		6FA012E326164478001526CC /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		6FA012E626164478001526CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		6FA012E826164478001526CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FA012F42616447C001526CC /* MindboxContentExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MindboxContentExtension.entitlements; sourceTree = "<group>"; };
+		71A0E2600E8AE8D06AB4D33A /* Pods-MindboxDocsAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MindboxDocsAppTests.release.xcconfig"; path = "Target Support Files/Pods-MindboxDocsAppTests/Pods-MindboxDocsAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		759CF4B62382760F47CEC10C /* Pods-MindboxDocsApp-MindboxDocsAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MindboxDocsApp-MindboxDocsAppUITests.release.xcconfig"; path = "Target Support Files/Pods-MindboxDocsApp-MindboxDocsAppUITests/Pods-MindboxDocsApp-MindboxDocsAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7DCDF24A934083A517C3D80F /* Pods-MindboxDocsApp-MindboxDocsAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MindboxDocsApp-MindboxDocsAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-MindboxDocsApp-MindboxDocsAppUITests/Pods-MindboxDocsApp-MindboxDocsAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7EEA1EC90AF19BF2C21627DA /* Pods-MindboxDocsAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MindboxDocsAppTests.debug.xcconfig"; path = "Target Support Files/Pods-MindboxDocsAppTests/Pods-MindboxDocsAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8B80B2C896ABCC910D4A7205 /* Pods_MindboxDocsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MindboxDocsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7FE18FAB86B8AC816902E36 /* Pods_MindboxDocsApp_MindboxDocsAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MindboxDocsApp_MindboxDocsAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC4BB80162DECE35F2E6A2B3 /* Pods-MindboxDocsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MindboxDocsApp.release.xcconfig"; path = "Target Support Files/Pods-MindboxDocsApp/Pods-MindboxDocsApp.release.xcconfig"; sourceTree = "<group>"; };
+		E2AB081020FE740E540A5DC8 /* Pods-MindboxDocsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MindboxDocsApp.debug.xcconfig"; path = "Target Support Files/Pods-MindboxDocsApp/Pods-MindboxDocsApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				841943667C2ECC2D9B8DF4DA /* Pods_MindboxDocsApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63E35E8B60C2D6591CB0E0D6 /* Pods_MindboxDocsAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +134,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2C548EF560C842C0362BBE0 /* Pods_MindboxDocsApp_MindboxDocsAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FA012C42616445A001526CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FA012D926164478001526CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FA012E126164478001526CC /* UserNotificationsUI.framework in Frameworks */,
+				6FA012DF26164478001526CC /* UserNotifications.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,7 +163,11 @@
 				6F30E4B62616406700EA237D /* MindboxDocsApp */,
 				6F30E4CF2616406800EA237D /* MindboxDocsAppTests */,
 				6F30E4DA2616406800EA237D /* MindboxDocsAppUITests */,
+				6FA012C82616445A001526CC /* MindboxNotificationServiceExtension */,
+				6FA012E226164478001526CC /* MindboxContentExtension */,
+				6FA012DD26164478001526CC /* Frameworks */,
 				6F30E4B52616406700EA237D /* Products */,
+				D5C9F3CAFF1856026239B3A3 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +177,8 @@
 				6F30E4B42616406700EA237D /* MindboxDocsApp.app */,
 				6F30E4CC2616406800EA237D /* MindboxDocsAppTests.xctest */,
 				6F30E4D72616406800EA237D /* MindboxDocsAppUITests.xctest */,
+				6FA012C72616445A001526CC /* MindboxNotificationServiceExtension.appex */,
+				6FA012DC26164478001526CC /* MindboxContentExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,6 +186,7 @@
 		6F30E4B62616406700EA237D /* MindboxDocsApp */ = {
 			isa = PBXGroup;
 			children = (
+				6FA012C2261643E4001526CC /* MindboxDocsApp.entitlements */,
 				6F30E4B72616406700EA237D /* AppDelegate.swift */,
 				6F30E4B92616406700EA237D /* DocumentBrowserViewController.swift */,
 				6F30E4BB2616406700EA237D /* DocumentViewController.swift */,
@@ -131,6 +217,52 @@
 			path = MindboxDocsAppUITests;
 			sourceTree = "<group>";
 		};
+		6FA012C82616445A001526CC /* MindboxNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				6FA012D726164461001526CC /* MindboxNotificationServiceExtension.entitlements */,
+				6FA012C92616445A001526CC /* NotificationService.swift */,
+				6FA012CB2616445A001526CC /* Info.plist */,
+			);
+			path = MindboxNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
+		6FA012DD26164478001526CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6FA012DE26164478001526CC /* UserNotifications.framework */,
+				6FA012E026164478001526CC /* UserNotificationsUI.framework */,
+				8B80B2C896ABCC910D4A7205 /* Pods_MindboxDocsApp.framework */,
+				C7FE18FAB86B8AC816902E36 /* Pods_MindboxDocsApp_MindboxDocsAppUITests.framework */,
+				22ECF51B9499279A71F153C4 /* Pods_MindboxDocsAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6FA012E226164478001526CC /* MindboxContentExtension */ = {
+			isa = PBXGroup;
+			children = (
+				6FA012F42616447C001526CC /* MindboxContentExtension.entitlements */,
+				6FA012E326164478001526CC /* NotificationViewController.swift */,
+				6FA012E526164478001526CC /* MainInterface.storyboard */,
+				6FA012E826164478001526CC /* Info.plist */,
+			);
+			path = MindboxContentExtension;
+			sourceTree = "<group>";
+		};
+		D5C9F3CAFF1856026239B3A3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E2AB081020FE740E540A5DC8 /* Pods-MindboxDocsApp.debug.xcconfig */,
+				DC4BB80162DECE35F2E6A2B3 /* Pods-MindboxDocsApp.release.xcconfig */,
+				7DCDF24A934083A517C3D80F /* Pods-MindboxDocsApp-MindboxDocsAppUITests.debug.xcconfig */,
+				759CF4B62382760F47CEC10C /* Pods-MindboxDocsApp-MindboxDocsAppUITests.release.xcconfig */,
+				7EEA1EC90AF19BF2C21627DA /* Pods-MindboxDocsAppTests.debug.xcconfig */,
+				71A0E2600E8AE8D06AB4D33A /* Pods-MindboxDocsAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,13 +270,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6F30E4E02616406800EA237D /* Build configuration list for PBXNativeTarget "MindboxDocsApp" */;
 			buildPhases = (
+				1FD0D2E589B52B2BC4E4E968 /* [CP] Check Pods Manifest.lock */,
 				6F30E4B02616406700EA237D /* Sources */,
 				6F30E4B12616406700EA237D /* Frameworks */,
 				6F30E4B22616406700EA237D /* Resources */,
+				6FA012D22616445A001526CC /* Embed App Extensions */,
+				D1966922D57DC6676D8E70A9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6FA012CD2616445A001526CC /* PBXTargetDependency */,
+				6FA012EA26164478001526CC /* PBXTargetDependency */,
 			);
 			name = MindboxDocsApp;
 			productName = MindboxDocsApp;
@@ -155,6 +292,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6F30E4E32616406800EA237D /* Build configuration list for PBXNativeTarget "MindboxDocsAppTests" */;
 			buildPhases = (
+				804087AE8B768B6B494992D1 /* [CP] Check Pods Manifest.lock */,
 				6F30E4C82616406800EA237D /* Sources */,
 				6F30E4C92616406800EA237D /* Frameworks */,
 				6F30E4CA2616406800EA237D /* Resources */,
@@ -173,9 +311,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6F30E4E62616406800EA237D /* Build configuration list for PBXNativeTarget "MindboxDocsAppUITests" */;
 			buildPhases = (
+				EA02B4164083F34E2E74E645 /* [CP] Check Pods Manifest.lock */,
 				6F30E4D32616406800EA237D /* Sources */,
 				6F30E4D42616406800EA237D /* Frameworks */,
 				6F30E4D52616406800EA237D /* Resources */,
+				B047820E90EEAF259E8F6EEE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -186,6 +326,40 @@
 			productName = MindboxDocsAppUITests;
 			productReference = 6F30E4D72616406800EA237D /* MindboxDocsAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		6FA012C62616445A001526CC /* MindboxNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FA012CF2616445A001526CC /* Build configuration list for PBXNativeTarget "MindboxNotificationServiceExtension" */;
+			buildPhases = (
+				6FA012C32616445A001526CC /* Sources */,
+				6FA012C42616445A001526CC /* Frameworks */,
+				6FA012C52616445A001526CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MindboxNotificationServiceExtension;
+			productName = MindboxNotificationServiceExtension;
+			productReference = 6FA012C72616445A001526CC /* MindboxNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		6FA012DB26164478001526CC /* MindboxContentExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FA012EC26164478001526CC /* Build configuration list for PBXNativeTarget "MindboxContentExtension" */;
+			buildPhases = (
+				6FA012D826164478001526CC /* Sources */,
+				6FA012D926164478001526CC /* Frameworks */,
+				6FA012DA26164478001526CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MindboxContentExtension;
+			productName = MindboxContentExtension;
+			productReference = 6FA012DC26164478001526CC /* MindboxContentExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -207,6 +381,12 @@
 						CreatedOnToolsVersion = 12.4;
 						TestTargetID = 6F30E4B32616406700EA237D;
 					};
+					6FA012C62616445A001526CC = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					6FA012DB26164478001526CC = {
+						CreatedOnToolsVersion = 12.4;
+					};
 				};
 			};
 			buildConfigurationList = 6F30E4AF2616406700EA237D /* Build configuration list for PBXProject "MindboxDocsApp" */;
@@ -225,6 +405,8 @@
 				6F30E4B32616406700EA237D /* MindboxDocsApp */,
 				6F30E4CB2616406800EA237D /* MindboxDocsAppTests */,
 				6F30E4D62616406800EA237D /* MindboxDocsAppUITests */,
+				6FA012C62616445A001526CC /* MindboxNotificationServiceExtension */,
+				6FA012DB26164478001526CC /* MindboxContentExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -254,7 +436,125 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6FA012C52616445A001526CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FA012DA26164478001526CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FA012E726164478001526CC /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1FD0D2E589B52B2BC4E4E968 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MindboxDocsApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		804087AE8B768B6B494992D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MindboxDocsAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B047820E90EEAF259E8F6EEE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MindboxDocsApp-MindboxDocsAppUITests/Pods-MindboxDocsApp-MindboxDocsAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MindboxDocsApp-MindboxDocsAppUITests/Pods-MindboxDocsApp-MindboxDocsAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MindboxDocsApp-MindboxDocsAppUITests/Pods-MindboxDocsApp-MindboxDocsAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1966922D57DC6676D8E70A9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MindboxDocsApp/Pods-MindboxDocsApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MindboxDocsApp/Pods-MindboxDocsApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MindboxDocsApp/Pods-MindboxDocsApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA02B4164083F34E2E74E645 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MindboxDocsApp-MindboxDocsAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6F30E4B02616406700EA237D /* Sources */ = {
@@ -284,6 +584,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6FA012C32616445A001526CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FA012CA2616445A001526CC /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FA012D826164478001526CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FA012E426164478001526CC /* NotificationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -296,6 +612,16 @@
 			isa = PBXTargetDependency;
 			target = 6F30E4B32616406700EA237D /* MindboxDocsApp */;
 			targetProxy = 6F30E4D82616406800EA237D /* PBXContainerItemProxy */;
+		};
+		6FA012CD2616445A001526CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6FA012C62616445A001526CC /* MindboxNotificationServiceExtension */;
+			targetProxy = 6FA012CC2616445A001526CC /* PBXContainerItemProxy */;
+		};
+		6FA012EA26164478001526CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6FA012DB26164478001526CC /* MindboxContentExtension */;
+			targetProxy = 6FA012E926164478001526CC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -316,11 +642,20 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		6FA012E526164478001526CC /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6FA012E626164478001526CC /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		6F30E4DE2616406800EA237D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2AB081020FE740E540A5DC8 /* Pods-MindboxDocsApp.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -370,7 +705,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -382,6 +717,7 @@
 		};
 		6F30E4DF2616406800EA237D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC4BB80162DECE35F2E6A2B3 /* Pods-MindboxDocsApp.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -425,7 +761,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -437,9 +773,12 @@
 		};
 		6F30E4E12616406800EA237D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2AB081020FE740E540A5DC8 /* Pods-MindboxDocsApp.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MindboxDocsApp/MindboxDocsApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N39VVWZXXP;
 				INFOPLIST_FILE = MindboxDocsApp/Info.plist;
@@ -456,9 +795,12 @@
 		};
 		6F30E4E22616406800EA237D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC4BB80162DECE35F2E6A2B3 /* Pods-MindboxDocsApp.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MindboxDocsApp/MindboxDocsApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N39VVWZXXP;
 				INFOPLIST_FILE = MindboxDocsApp/Info.plist;
@@ -475,6 +817,7 @@
 		};
 		6F30E4E42616406800EA237D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EEA1EC90AF19BF2C21627DA /* Pods-MindboxDocsAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -497,6 +840,7 @@
 		};
 		6F30E4E52616406800EA237D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71A0E2600E8AE8D06AB4D33A /* Pods-MindboxDocsAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -519,6 +863,7 @@
 		};
 		6F30E4E72616406800EA237D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DCDF24A934083A517C3D80F /* Pods-MindboxDocsApp-MindboxDocsAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -539,6 +884,7 @@
 		};
 		6F30E4E82616406800EA237D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 759CF4B62382760F47CEC10C /* Pods-MindboxDocsApp-MindboxDocsAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -554,6 +900,86 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = MindboxDocsApp;
+			};
+			name = Release;
+		};
+		6FA012D02616445A001526CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MindboxNotificationServiceExtension/MindboxNotificationServiceExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N39VVWZXXP;
+				INFOPLIST_FILE = MindboxNotificationServiceExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "nikitin-petr.ru.MindboxDocsApp.MindboxNotificationServiceExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6FA012D12616445A001526CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MindboxNotificationServiceExtension/MindboxNotificationServiceExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N39VVWZXXP;
+				INFOPLIST_FILE = MindboxNotificationServiceExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "nikitin-petr.ru.MindboxDocsApp.MindboxNotificationServiceExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6FA012ED26164478001526CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MindboxContentExtension/MindboxContentExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N39VVWZXXP;
+				INFOPLIST_FILE = MindboxContentExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "nikitin-petr.ru.MindboxDocsApp.MindboxContentExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6FA012EE26164478001526CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MindboxContentExtension/MindboxContentExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N39VVWZXXP;
+				INFOPLIST_FILE = MindboxContentExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "nikitin-petr.ru.MindboxDocsApp.MindboxContentExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -592,6 +1018,24 @@
 			buildConfigurations = (
 				6F30E4E72616406800EA237D /* Debug */,
 				6F30E4E82616406800EA237D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6FA012CF2616445A001526CC /* Build configuration list for PBXNativeTarget "MindboxNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FA012D02616445A001526CC /* Debug */,
+				6FA012D12616445A001526CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6FA012EC26164478001526CC /* Build configuration list for PBXNativeTarget "MindboxContentExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FA012ED26164478001526CC /* Debug */,
+				6FA012EE26164478001526CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

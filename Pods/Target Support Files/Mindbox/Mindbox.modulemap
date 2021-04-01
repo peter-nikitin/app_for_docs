@@ -1,0 +1,6 @@
+framework module Mindbox {
+  umbrella header "Mindbox-umbrella.h"
+
+  export *
+  module * { export * }
+}

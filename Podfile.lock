@@ -1,0 +1,22 @@
+PODS:
+  - Mindbox (0.5.0)
+
+DEPENDENCIES:
+  - Mindbox (from `https://github.com/mindbox-moscow/ios-sdk.git`, branch `develop`)
+
+EXTERNAL SOURCES:
+  Mindbox:
+    :branch: develop
+    :git: https://github.com/mindbox-moscow/ios-sdk.git
+
+CHECKOUT OPTIONS:
+  Mindbox:
+    :commit: f056a618ccc4aaa09697eab8e8140b58888561df
+    :git: https://github.com/mindbox-moscow/ios-sdk.git
+
+SPEC CHECKSUMS:
+  Mindbox: 42dfc2555f8d0e2b4b9101287e00d7cc19ee72c6
+
+PODFILE CHECKSUM: 1af902bbba25af92d471e938f2dc5b03d0b67b28
+
+COCOAPODS: 1.10.1

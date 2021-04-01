@@ -1,0 +1,6 @@
+framework module Pods_MindboxDocsApp_MindboxDocsAppUITests {
+  umbrella header "Pods-MindboxDocsApp-MindboxDocsAppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

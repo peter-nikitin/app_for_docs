@@ -1,0 +1,1239 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00CC3F9BE64CAF5D547422BA17926C33 /* NotificationDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B04615CD9F03EBCF5DD29247880D8C /* NotificationDecoder.swift */; };
+		0207618FF4D4C96A50B7503E8712E336 /* GuaranteedDeliveryManager+State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0F5820AF0D3F0FBB8B3FEC0F8ECD76 /* GuaranteedDeliveryManager+State.swift */; };
+		081DDB87E30B2A986279E6D3CCB501CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		08B168AF4F5C1B54D1B35129DB7EC97F /* NSManagedObjectContext+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA67493DC93432FCEF82DED997E0F60 /* NSManagedObjectContext+.swift */; };
+		0C4B02DC05E2EE5515775BE18358A712 /* EventWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B9B72EEDCE229A98911567A96608DC /* EventWrapper.swift */; };
+		0E2CAA7D4991783D18032AE5DD83105B /* DeliveredNotificationManagerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA1A2B837AD13B0DB69A9D043F1C895 /* DeliveredNotificationManagerError.swift */; };
+		0F7A0AC46FD5B3FBCBF4FDC53A3A515D /* UDIDValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2224562940F9CB0F88D7608E2FC4CA4F /* UDIDValidator.swift */; };
+		14766D309215C66A0A6FE679A3794439 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295991B682D80D170AA905D829C543AB /* Route.swift */; };
+		17D20AC5A7B09DB4D7BC50E836816494 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BB08BFE483121C6321C46B13976D22 /* HTTPMethod.swift */; };
+		1C63D05A200E076F0674E962DB17D5BE /* Pods-MindboxDocsAppTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 183C3E3AE257611D1609BBAD9649DA07 /* Pods-MindboxDocsAppTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1DB9C64D7AED80100EC30F08D2226E1C /* CDEvent+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB665269D47C9A68178E61D4D8ACD8D /* CDEvent+CoreDataClass.swift */; };
+		1E06D875CD86FA7E362EB53DBF33BB20 /* Pods-MindboxDocsApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BB60ADC23B0218526A06017B35FDB27 /* Pods-MindboxDocsApp-dummy.m */; };
+		231CF1FED301FE9B685B93B7738AA0E0 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F42A174A86E1F8C151E93CB4A69258 /* Event.swift */; };
+		2740866588835E859F66724DEA52AD30 /* MindboxErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA823DD89386886E4B6DEC3BB8BC0B90 /* MindboxErrors.swift */; };
+		28C64BAA56184A9FB94433AE307C5D60 /* Pods-MindboxDocsAppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E83EECC8DB87E1B4A6091F99783B8485 /* Pods-MindboxDocsAppTests-dummy.m */; };
+		2924EB64B783140D5CAA1B5EF68208BE /* UNAuthorizationStatusProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50326E9388B6CC38EA43A8BC8EE7F60 /* UNAuthorizationStatusProviding.swift */; };
+		2973EE4F147404BEED21066A02DBC1D3 /* ClickNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879CDEB7A89DBD2C519FCCAC04C9F3B8 /* ClickNotificationManager.swift */; };
+		2FFBB277D246DA7E29DC90D794D70A82 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6CFEB2D32140BC4B58798D950610E7 /* Logger.swift */; };
+		35AA27878A0B8B389D2C939A8109B1AA /* BodyDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7E36AC6D39BF9FD858B1FE55822344 /* BodyDecoder.swift */; };
+		39160E7D0D0823F4E54EDC34230733AD /* UNAuthorizationStatusProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF4E1838B37BA9F0363AAC7DA3134E3 /* UNAuthorizationStatusProvider.swift */; };
+		42A61216B15D2D130782F72ABC225B17 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECE2D358F110D8B5E552A6A726C5E6E /* BaseResponse.swift */; };
+		45E72EA694BBC0169F77A4C4432694EC /* MBDatabaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D3DE68F39B94169DCDB3A3B8E66E9A /* MBDatabaseRepository.swift */; };
+		4D0A4311246AE6815DBEBCB285D0FF93 /* DeviceModelHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163FD968AB18929164EFF78C7B1A1A09 /* DeviceModelHelper.swift */; };
+		4D4FD5324AFD9753602D64C520A41B3F /* CDEvent+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBA496CD09C8C89FABC0177E086DBDD /* CDEvent+CoreDataProperties.swift */; };
+		5678CB009E411680F256E0C9323ABD6A /* MBDatabaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD332E3BA9470BC476506C3ABF1AC221 /* MBDatabaseError.swift */; };
+		5885C6C5127DD7455A53B7809524AEC8 /* DeliveredNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0111D0F8A80CD4BF81E53F89D6967DD /* DeliveredNotificationManager.swift */; };
+		58E6C3629EDD52E576D3CA7A408B2B17 /* MBUtilitiesFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B87C4C38494FE660A23BACBD66B04A /* MBUtilitiesFetcher.swift */; };
+		5E753071DB51C8CC7E9631F3C085D0EE /* BackgroundTaskManagerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CF5471E295877EE2028B7E311A11F7 /* BackgroundTaskManagerType.swift */; };
+		60B46EFACB96833CDBAEBBD8F83470FE /* HTTPURLResponseStatusCodeValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEC27D9D12E5EAD2DA76290F7CBE7EB /* HTTPURLResponseStatusCodeValidator.swift */; };
+		611A4B8DCEB26E6375CF2E513803C0ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		647C20B9C940FD4F4FECDBFD3497D055 /* Mindbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B716D3226599B3F483EAFB43C56E22 /* Mindbox.swift */; };
+		66928832574C484A3D71BD275E91BAA2 /* CoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7720072F06DEEAAD36C5F9076D544ACB /* CoreController.swift */; };
+		67273475F663E63234FF1F67EB6ED25E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		67D066AD735E32A748CE045E3A123447 /* BackgroundTaskManagerProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF739737D0E8E995E6D2B0A72A5C40F /* BackgroundTaskManagerProxy.swift */; };
+		6C1427A9748687E84E6105C7139C0D63 /* Pods-MindboxDocsApp-MindboxDocsAppUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1A66205CAEC987B5A61A29B259BBD3 /* Pods-MindboxDocsApp-MindboxDocsAppUITests-dummy.m */; };
+		6FA243AACC34BDE94A5F698E5E03A01B /* DeliveryOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B617473DE22EDADB200027464174EE /* DeliveryOperation.swift */; };
+		72C5B54EAC0B476733C537EF130B050B /* IDFVFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBF977E9C46912A8AC7742EB052D685 /* IDFVFetcher.swift */; };
+		75766CA6F293483885E60BE3B33EFDC3 /* BodyEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2526E7DF1C8B6E90F4A226B33357208E /* BodyEncoder.swift */; };
+		8383CB4DE6E2E42EA3B8DCE3A987BDC2 /* MBConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A0233DDAF736DF36D84E97F701398D /* MBConfiguration.swift */; };
+		8592BB63DD2A0B9298B2037915E81B98 /* URLValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA29F5E463954BBFA59115F758B46FB /* URLValidator.swift */; };
+		87557CA60A8AE0F34D4A7583527DC740 /* MBPersistenceStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A91D69A4C308C5F96FE7E8D1BA64A64 /* MBPersistenceStorage.swift */; };
+		8792C1BB5B276480DAEF183CDA9EA07D /* DatabaseLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FB8F11A50F2F7E0E2CD1568F86852C /* DatabaseLoader.swift */; };
+		921E99741C928886CC49D172DF64907D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CC4AE006E53309AD91DA8BADC427E1 /* Constants.swift */; };
+		949D834036829A0A11DD3D2948D537F6 /* MobileApplicationInstalled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB7D72E84E53A247561C4C8990AB6AC /* MobileApplicationInstalled.swift */; };
+		95511373AC7D9504E683C963C2883E47 /* LogWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B968EB33D6CBAB2985AFE8678188B92 /* LogWriter.swift */; };
+		966366CC89BD570614A5A41EFAACF236 /* MBNetworkFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBDFE0B1D55FA42BA3418EFB1F002AF /* MBNetworkFetcher.swift */; };
+		97F97798D5784E3E45874905AC24D3A3 /* UIBackgroundTaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352036D8A7019421BFB02ADEABADBA59 /* UIBackgroundTaskManager.swift */; };
+		9B74AFA4C08FC3F4BC83AC92B0D151ED /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C234BB9E2F38A981EA0508AE1D3171 /* DependencyContainer.swift */; };
+		9F93773357C745E761C591E15D5F598E /* NotificationsPayloads.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A16AD116010DC26FDD6E485262CED8 /* NotificationsPayloads.swift */; };
+		A09156E1356A1E7E813484AEABED95BF /* MindboxDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D20342AB7B6DB8C88DF4EFADE796F79 /* MindboxDelegate.swift */; };
+		AEBC8D40B98A73A45D0AA1B98CBDF3FC /* UtilitiesFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE29ECA9273A8AA6B8F3B52EF09CC0AB /* UtilitiesFetcher.swift */; };
+		B0FEC480AB9639B7D38FDA1F70994D1E /* EventRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901F0114C7B1E4FAF0A8CB2A99F91920 /* EventRoute.swift */; };
+		B6A1BF9667A49DCA63E45718C9D7CAFE /* MobileApplicationInfoUpdated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2968FDD4323592857EDC7AE1FB4E24F /* MobileApplicationInfoUpdated.swift */; };
+		B86216A9B0316B0FC9C6A514C74F2715 /* DependencyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C44403F3997BE7AB20DFE338E2EDD14 /* DependencyProvider.swift */; };
+		B949FD6753D090442C9F860C8BAA4C09 /* BGTaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D122E49C5B40E7E228CCE884B127A5D2 /* BGTaskManager.swift */; };
+		C051BED67A53B6D0CD659C2E3C791034 /* LogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098D218D9736A5F74B03F8E4012E3DCF /* LogManager.swift */; };
+		C21A0B70D4F16810500265BF24A28A58 /* IDFAFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF26B2EE54318A868022B3D42035505 /* IDFAFetcher.swift */; };
+		C390600015681A9555F3521416744162 /* PushDelivered.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5380A18338191894938A347B88B973 /* PushDelivered.swift */; };
+		D08B38B1AA0D270AC15230DF4566DEAB /* PersistenceStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956404562F23B1615F03D132019C8BC8 /* PersistenceStorage.swift */; };
+		D326BF61C892CA47DF0D13F916FDB1ED /* Mindbox-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B7D5AF4922A026842711B96B4F5BF01F /* Mindbox-dummy.m */; };
+		DF7E06A6C37CB27317F43F68EFEA0CCD /* Pods-MindboxDocsApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E0395B35DB7F8E80D6ABC7ADA446BFA5 /* Pods-MindboxDocsApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E136AE878A2F17CFC9EE9426623A14DA /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CF14E529DFE7EFA13B39A302A144AA /* ErrorModel.swift */; };
+		E5DE7CD51F7EA27A48925DB07CD95F09 /* NetworkFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CB8EEAA59AD4D7937F746B1573FC48 /* NetworkFetcher.swift */; };
+		EC9E4A9740FCAD9FF5FE1081424187D3 /* HTTPTypealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE53118168F1D8FD9B1C1950E8DF7AC4 /* HTTPTypealiases.swift */; };
+		ECF9561EF7F2E09B6B1F395DD379EEF5 /* LogConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1A5451D7F16B23EDD807D670283BD5 /* LogConfiguration.swift */; };
+		EDE520DD9A042F80EAC68935718100BA /* Pods-MindboxDocsApp-MindboxDocsAppUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 596E6E7AC634790A3E684148CBEF8B26 /* Pods-MindboxDocsApp-MindboxDocsAppUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0BB4FB390EB4A66A85BCA8ABBB97791 /* ErrorKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A752E2FFE3A92BE0152ED0C753B1992 /* ErrorKey.swift */; };
+		F1FF88A4DA0F3B8BC5B8D0C4E4AC0991 /* MBDatabase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 266453AA2CCEEAA6B6B807E577D2840D /* MBDatabase.xcdatamodeld */; };
+		F29F394557E1613F2EA423CDC9F0C415 /* GuaranteedDeliveryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7689E661093A1EF18B2B48B23921833F /* GuaranteedDeliveryManager.swift */; };
+		F2D50118A52B0E35841607AC062E7A9B /* MBEventRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03D9A269DE4A42289D57ACF63C90433 /* MBEventRepository.swift */; };
+		F4E29D9F2798B8B7B21E20116BC62AD9 /* TrackClick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD9DEC4660075226336926877C97978 /* TrackClick.swift */; };
+		F74DC76A4346BB3B67D28F162DA2188B /* MBPersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833B769CE0E589B52A2B1AC7F813175D /* MBPersistentContainer.swift */; };
+		F7F80B490FAE47BB82C6BDCB1E33F290 /* Mindbox-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CA634C0198791B2610A5559245A7515 /* Mindbox-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FEBF542B60D2BFC9D251E6C9ECCD8BBC /* URLRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD46ED5E49FE0E19891EE07E0FC69A4 /* URLRequestBuilder.swift */; };
+		FED3D56C9534ED79F2B6A9C7E6B508A5 /* EventRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9611723023F99DB3A6BA509BD6D5C2 /* EventRepository.swift */; };
+		FF9774DF9684BC6E8134051229762FC2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5AF52690DAF69E17C6739F971B5EB0DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 094D2C96FA0AA0D7C334C152717F21FD;
+			remoteInfo = "Pods-MindboxDocsApp";
+		};
+		6F3659973076472FF09CD20E1B733577 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F09FD53C0D7355712413F61F1C377646;
+			remoteInfo = Mindbox;
+		};
+		AB4A85ADEB8BBC5874B21E995F4556FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F09FD53C0D7355712413F61F1C377646;
+			remoteInfo = Mindbox;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		036D4A1AF97ABE1172016B18C052A177 /* Pods-MindboxDocsApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MindboxDocsApp-Info.plist"; sourceTree = "<group>"; };
+		098D218D9736A5F74B03F8E4012E3DCF /* LogManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LogManager.swift; path = Mindbox/Utilities/Logger/LogManager.swift; sourceTree = "<group>"; };
+		0A69D24022F031BFDAA9165B245B0B77 /* Pods-MindboxDocsApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MindboxDocsApp.modulemap"; sourceTree = "<group>"; };
+		0AF26B2EE54318A868022B3D42035505 /* IDFAFetcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IDFAFetcher.swift; path = Mindbox/Utilities/IDFetcher/IDFAFetcher.swift; sourceTree = "<group>"; };
+		0B968EB33D6CBAB2985AFE8678188B92 /* LogWriter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LogWriter.swift; path = Mindbox/Utilities/Logger/LogWriter.swift; sourceTree = "<group>"; };
+		0BB60ADC23B0218526A06017B35FDB27 /* Pods-MindboxDocsApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MindboxDocsApp-dummy.m"; sourceTree = "<group>"; };
+		138929F0A935E3F7F0BFB56EA11466E6 /* Pods-MindboxDocsApp-MindboxDocsAppUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MindboxDocsApp-MindboxDocsAppUITests.modulemap"; sourceTree = "<group>"; };
+		14FB8F11A50F2F7E0E2CD1568F86852C /* DatabaseLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DatabaseLoader.swift; path = Mindbox/Database/DatabaseLoader.swift; sourceTree = "<group>"; };
+		163FD968AB18929164EFF78C7B1A1A09 /* DeviceModelHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeviceModelHelper.swift; path = Mindbox/Network/Helpers/DeviceModelHelper.swift; sourceTree = "<group>"; };
+		16F1FDC11B923B9149EFF445565E1CAC /* Pods-MindboxDocsAppTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MindboxDocsAppTests-Info.plist"; sourceTree = "<group>"; };
+		183C3E3AE257611D1609BBAD9649DA07 /* Pods-MindboxDocsAppTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MindboxDocsAppTests-umbrella.h"; sourceTree = "<group>"; };
+		1AE5C66364CB3526CE6A6A48C9E58338 /* Pods-MindboxDocsApp-MindboxDocsAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MindboxDocsApp-MindboxDocsAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1F6CFEB2D32140BC4B58798D950610E7 /* Logger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = Mindbox/Utilities/Logger/Logger.swift; sourceTree = "<group>"; };
+		2224562940F9CB0F88D7608E2FC4CA4F /* UDIDValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UDIDValidator.swift; path = Mindbox/Validators/UDIDValidator.swift; sourceTree = "<group>"; };
+		23B617473DE22EDADB200027464174EE /* DeliveryOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeliveryOperation.swift; path = Mindbox/GuaranteedDeliveryManager/DeliveryOperation.swift; sourceTree = "<group>"; };
+		23CB8EEAA59AD4D7937F746B1573FC48 /* NetworkFetcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkFetcher.swift; path = Mindbox/Network/Abstract/NetworkFetcher.swift; sourceTree = "<group>"; };
+		24CF14E529DFE7EFA13B39A302A144AA /* ErrorModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ErrorModel.swift; path = Mindbox/Network/Types/ErrorModel.swift; sourceTree = "<group>"; };
+		2526E7DF1C8B6E90F4A226B33357208E /* BodyEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BodyEncoder.swift; path = "Mindbox/Utilities/Body+/BodyEncoder.swift"; sourceTree = "<group>"; };
+		295991B682D80D170AA905D829C543AB /* Route.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Route.swift; path = Mindbox/Network/Abstract/Route.swift; sourceTree = "<group>"; };
+		29CC4AE006E53309AD91DA8BADC427E1 /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Mindbox/Utilities/Constants.swift; sourceTree = "<group>"; };
+		2A752E2FFE3A92BE0152ED0C753B1992 /* ErrorKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ErrorKey.swift; path = Mindbox/Network/Types/ErrorKey.swift; sourceTree = "<group>"; };
+		2C5380A18338191894938A347B88B973 /* PushDelivered.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PushDelivered.swift; path = Mindbox/Model/Bodies/PushDelivered.swift; sourceTree = "<group>"; };
+		2DD9DEC4660075226336926877C97978 /* TrackClick.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TrackClick.swift; path = Mindbox/Model/Bodies/TrackClick.swift; sourceTree = "<group>"; };
+		2ECE2D358F110D8B5E552A6A726C5E6E /* BaseResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseResponse.swift; path = Mindbox/Network/Types/Responses/BaseResponse.swift; sourceTree = "<group>"; };
+		31BB08BFE483121C6321C46B13976D22 /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = Mindbox/Network/Types/HTTPMethod.swift; sourceTree = "<group>"; };
+		352036D8A7019421BFB02ADEABADBA59 /* UIBackgroundTaskManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIBackgroundTaskManager.swift; path = Mindbox/GuaranteedDeliveryManager/Background/UIBackgroundTaskManager.swift; sourceTree = "<group>"; };
+		3DB7D72E84E53A247561C4C8990AB6AC /* MobileApplicationInstalled.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MobileApplicationInstalled.swift; path = Mindbox/Model/Bodies/MobileApplicationInstalled.swift; sourceTree = "<group>"; };
+		4AA1A2B837AD13B0DB69A9D043F1C895 /* DeliveredNotificationManagerError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeliveredNotificationManagerError.swift; path = Mindbox/DeliveredNotificationManager/DeliveredNotificationManagerError.swift; sourceTree = "<group>"; };
+		4D76E2408738ADC43FAACD76F68217B2 /* Pods-MindboxDocsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MindboxDocsApp.release.xcconfig"; sourceTree = "<group>"; };
+		4FBDFE0B1D55FA42BA3418EFB1F002AF /* MBNetworkFetcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBNetworkFetcher.swift; path = Mindbox/Network/MBNetworkFetcher.swift; sourceTree = "<group>"; };
+		4FF4E1838B37BA9F0363AAC7DA3134E3 /* UNAuthorizationStatusProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UNAuthorizationStatusProvider.swift; path = Mindbox/Utilities/UNAuthorizationStatusProviding/UNAuthorizationStatusProvider.swift; sourceTree = "<group>"; };
+		51E0A6C749F306C04156C2B78D74D77B /* Pods_MindboxDocsAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MindboxDocsAppTests.framework; path = "Pods-MindboxDocsAppTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5482E62D4CE1D68B7CECEC8291FAA44E /* Pods-MindboxDocsApp-MindboxDocsAppUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MindboxDocsApp-MindboxDocsAppUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		596E6E7AC634790A3E684148CBEF8B26 /* Pods-MindboxDocsApp-MindboxDocsAppUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MindboxDocsApp-MindboxDocsAppUITests-umbrella.h"; sourceTree = "<group>"; };
+		60C24B7026F5B9C52860B8AFD2F2C8DB /* Pods-MindboxDocsAppTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MindboxDocsAppTests.modulemap"; sourceTree = "<group>"; };
+		656706D4B53F13AB814FE53FCD98CE1E /* Pods-MindboxDocsApp-MindboxDocsAppUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MindboxDocsApp-MindboxDocsAppUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		66BB0874E6421069A7F055CB853F3247 /* Mindbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Mindbox.framework; path = Mindbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B8EDCFFB475BF1F32F33568F5EAC2CD /* Pods-MindboxDocsAppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MindboxDocsAppTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7689E661093A1EF18B2B48B23921833F /* GuaranteedDeliveryManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GuaranteedDeliveryManager.swift; path = Mindbox/GuaranteedDeliveryManager/GuaranteedDeliveryManager.swift; sourceTree = "<group>"; };
+		76A0233DDAF736DF36D84E97F701398D /* MBConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBConfiguration.swift; path = Mindbox/MBConfiguration.swift; sourceTree = "<group>"; };
+		76B9B72EEDCE229A98911567A96608DC /* EventWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventWrapper.swift; path = Mindbox/NetworkRepository/Event/EventWrapper.swift; sourceTree = "<group>"; };
+		7720072F06DEEAAD36C5F9076D544ACB /* CoreController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreController.swift; path = Mindbox/CoreController/CoreController.swift; sourceTree = "<group>"; };
+		7BA29F5E463954BBFA59115F758B46FB /* URLValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLValidator.swift; path = Mindbox/Validators/URLValidator.swift; sourceTree = "<group>"; };
+		7CA634C0198791B2610A5559245A7515 /* Mindbox-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Mindbox-umbrella.h"; sourceTree = "<group>"; };
+		7CBA496CD09C8C89FABC0177E086DBDD /* CDEvent+CoreDataProperties.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CDEvent+CoreDataProperties.swift"; path = "Mindbox/Database/Entities/CDEvent+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7D0F5820AF0D3F0FBB8B3FEC0F8ECD76 /* GuaranteedDeliveryManager+State.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "GuaranteedDeliveryManager+State.swift"; path = "Mindbox/GuaranteedDeliveryManager/GuaranteedDeliveryManager+State.swift"; sourceTree = "<group>"; };
+		7D20342AB7B6DB8C88DF4EFADE796F79 /* MindboxDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MindboxDelegate.swift; path = Mindbox/MindboxDelegate.swift; sourceTree = "<group>"; };
+		81A32E4DF753CCD40B91B8B21817291C /* MBDatabase.xcdatamodel */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcdatamodel; path = MBDatabase.xcdatamodel; sourceTree = "<group>"; };
+		833B769CE0E589B52A2B1AC7F813175D /* MBPersistentContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBPersistentContainer.swift; path = Mindbox/Database/MBPersistentContainer.swift; sourceTree = "<group>"; };
+		8692A3CE4418DA7711AB04747965846A /* Mindbox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Mindbox.release.xcconfig; sourceTree = "<group>"; };
+		879CDEB7A89DBD2C519FCCAC04C9F3B8 /* ClickNotificationManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClickNotificationManager.swift; path = Mindbox/ClickNotificationManager/ClickNotificationManager.swift; sourceTree = "<group>"; };
+		87F42A174A86E1F8C151E93CB4A69258 /* Event.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Event.swift; path = Mindbox/Model/Event.swift; sourceTree = "<group>"; };
+		8C3E97DB7C1BEAD24F4C64862253C091 /* Pods_MindboxDocsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MindboxDocsApp.framework; path = "Pods-MindboxDocsApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FD46ED5E49FE0E19891EE07E0FC69A4 /* URLRequestBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLRequestBuilder.swift; path = Mindbox/Network/Helpers/URLRequestBuilder.swift; sourceTree = "<group>"; };
+		8FEC27D9D12E5EAD2DA76290F7CBE7EB /* HTTPURLResponseStatusCodeValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPURLResponseStatusCodeValidator.swift; path = Mindbox/Network/Validators/HTTPURLResponseStatusCodeValidator.swift; sourceTree = "<group>"; };
+		8FF827884C2976662D32E5035E71B02E /* Pods-MindboxDocsApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MindboxDocsApp-frameworks.sh"; sourceTree = "<group>"; };
+		901F0114C7B1E4FAF0A8CB2A99F91920 /* EventRoute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventRoute.swift; path = Mindbox/NetworkRepository/Event/EventRoute.swift; sourceTree = "<group>"; };
+		9208F30581AE402DAFCFDC1CBB816224 /* Mindbox-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Mindbox-prefix.pch"; sourceTree = "<group>"; };
+		9476FC34EA5A7A43C0C948412FAE6FE8 /* Pods-MindboxDocsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MindboxDocsApp.debug.xcconfig"; sourceTree = "<group>"; };
+		956404562F23B1615F03D132019C8BC8 /* PersistenceStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PersistenceStorage.swift; path = Mindbox/PersistenceStorage/PersistenceStorage.swift; sourceTree = "<group>"; };
+		9A91D69A4C308C5F96FE7E8D1BA64A64 /* MBPersistenceStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBPersistenceStorage.swift; path = Mindbox/PersistenceStorage/MBPersistenceStorage.swift; sourceTree = "<group>"; };
+		9BBF977E9C46912A8AC7742EB052D685 /* IDFVFetcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IDFVFetcher.swift; path = Mindbox/Utilities/IDFetcher/IDFVFetcher.swift; sourceTree = "<group>"; };
+		9C44403F3997BE7AB20DFE338E2EDD14 /* DependencyProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DependencyProvider.swift; path = Mindbox/DI/DependencyProvider.swift; sourceTree = "<group>"; };
+		9D7E36AC6D39BF9FD858B1FE55822344 /* BodyDecoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BodyDecoder.swift; path = "Mindbox/Utilities/Body+/BodyDecoder.swift"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A3A10F6E2A6246F518070A6A585BEF08 /* Mindbox.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Mindbox.modulemap; sourceTree = "<group>"; };
+		A3CF5471E295877EE2028B7E311A11F7 /* BackgroundTaskManagerType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BackgroundTaskManagerType.swift; path = Mindbox/GuaranteedDeliveryManager/Background/BackgroundTaskManagerType.swift; sourceTree = "<group>"; };
+		A6C234BB9E2F38A981EA0508AE1D3171 /* DependencyContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DependencyContainer.swift; path = Mindbox/DI/DependencyContainer.swift; sourceTree = "<group>"; };
+		A6EEB4B683BB99480EF0452BF881CDE5 /* Pods-MindboxDocsApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MindboxDocsApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		AA823DD89386886E4B6DEC3BB8BC0B90 /* MindboxErrors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MindboxErrors.swift; path = Mindbox/Utilities/MindboxErrors.swift; sourceTree = "<group>"; };
+		AC1A66205CAEC987B5A61A29B259BBD3 /* Pods-MindboxDocsApp-MindboxDocsAppUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MindboxDocsApp-MindboxDocsAppUITests-dummy.m"; sourceTree = "<group>"; };
+		AD3313CE2470A7CDFCF9CB97981189A5 /* Pods-MindboxDocsApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MindboxDocsApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AD9611723023F99DB3A6BA509BD6D5C2 /* EventRepository.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventRepository.swift; path = Mindbox/NetworkRepository/Event/EventRepository.swift; sourceTree = "<group>"; };
+		AE53118168F1D8FD9B1C1950E8DF7AC4 /* HTTPTypealiases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPTypealiases.swift; path = Mindbox/Network/Types/HTTPTypealiases.swift; sourceTree = "<group>"; };
+		AEA67493DC93432FCEF82DED997E0F60 /* NSManagedObjectContext+.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSManagedObjectContext+.swift"; path = "Mindbox/Database/Extensions/NSManagedObjectContext+.swift"; sourceTree = "<group>"; };
+		AEF739737D0E8E995E6D2B0A72A5C40F /* BackgroundTaskManagerProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BackgroundTaskManagerProxy.swift; path = Mindbox/GuaranteedDeliveryManager/Background/BackgroundTaskManagerProxy.swift; sourceTree = "<group>"; };
+		B03D9A269DE4A42289D57ACF63C90433 /* MBEventRepository.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBEventRepository.swift; path = Mindbox/NetworkRepository/Event/MBEventRepository.swift; sourceTree = "<group>"; };
+		B2968FDD4323592857EDC7AE1FB4E24F /* MobileApplicationInfoUpdated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MobileApplicationInfoUpdated.swift; path = Mindbox/Model/Bodies/MobileApplicationInfoUpdated.swift; sourceTree = "<group>"; };
+		B2B87C4C38494FE660A23BACBD66B04A /* MBUtilitiesFetcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBUtilitiesFetcher.swift; path = Mindbox/Utilities/UtilitiesFetcher/MBUtilitiesFetcher.swift; sourceTree = "<group>"; };
+		B6B04615CD9F03EBCF5DD29247880D8C /* NotificationDecoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NotificationDecoder.swift; path = Mindbox/Utilities/NotificationDecoder.swift; sourceTree = "<group>"; };
+		B7D5AF4922A026842711B96B4F5BF01F /* Mindbox-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Mindbox-dummy.m"; sourceTree = "<group>"; };
+		B8D3FE9DDB603917B964539E8DC09CB4 /* Pods-MindboxDocsAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MindboxDocsAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B9A16AD116010DC26FDD6E485262CED8 /* NotificationsPayloads.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NotificationsPayloads.swift; path = Mindbox/Model/NotificationPayload/NotificationsPayloads.swift; sourceTree = "<group>"; };
+		BE29ECA9273A8AA6B8F3B52EF09CC0AB /* UtilitiesFetcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UtilitiesFetcher.swift; path = Mindbox/Utilities/UtilitiesFetcher/UtilitiesFetcher.swift; sourceTree = "<group>"; };
+		C0111D0F8A80CD4BF81E53F89D6967DD /* DeliveredNotificationManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeliveredNotificationManager.swift; path = Mindbox/DeliveredNotificationManager/DeliveredNotificationManager.swift; sourceTree = "<group>"; };
+		C0253A107A7A1AC1AC0FC22142C4B3FC /* Pods-MindboxDocsApp-MindboxDocsAppUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MindboxDocsApp-MindboxDocsAppUITests-frameworks.sh"; sourceTree = "<group>"; };
+		C254A5C3A0485064F6B2B0B0A5703DD4 /* Pods_MindboxDocsApp_MindboxDocsAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MindboxDocsApp_MindboxDocsAppUITests.framework; path = "Pods-MindboxDocsApp-MindboxDocsAppUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C68C63ACEA8337E2961583DA0B6FF120 /* Pods-MindboxDocsAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MindboxDocsAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		C8B716D3226599B3F483EAFB43C56E22 /* Mindbox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mindbox.swift; path = Mindbox/Mindbox.swift; sourceTree = "<group>"; };
+		CCD267FB0FD3232F2882D28333BE01AA /* Pods-MindboxDocsApp-MindboxDocsAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MindboxDocsApp-MindboxDocsAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CD9E42EC7435BB1A669AA83A59C90782 /* Pods-MindboxDocsAppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MindboxDocsAppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D122E49C5B40E7E228CCE884B127A5D2 /* BGTaskManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BGTaskManager.swift; path = Mindbox/GuaranteedDeliveryManager/Background/BGTaskManager.swift; sourceTree = "<group>"; };
+		D50326E9388B6CC38EA43A8BC8EE7F60 /* UNAuthorizationStatusProviding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UNAuthorizationStatusProviding.swift; path = Mindbox/Utilities/UNAuthorizationStatusProviding/UNAuthorizationStatusProviding.swift; sourceTree = "<group>"; };
+		D7D3DE68F39B94169DCDB3A3B8E66E9A /* MBDatabaseRepository.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBDatabaseRepository.swift; path = Mindbox/Database/MBDatabaseRepository.swift; sourceTree = "<group>"; };
+		DAE6202E4FBD5C1CD2B68AD03DB9CA4D /* Pods-MindboxDocsApp-MindboxDocsAppUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MindboxDocsApp-MindboxDocsAppUITests-Info.plist"; sourceTree = "<group>"; };
+		DD332E3BA9470BC476506C3ABF1AC221 /* MBDatabaseError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBDatabaseError.swift; path = Mindbox/Database/MBDatabaseError.swift; sourceTree = "<group>"; };
+		E0395B35DB7F8E80D6ABC7ADA446BFA5 /* Pods-MindboxDocsApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MindboxDocsApp-umbrella.h"; sourceTree = "<group>"; };
+		E111CD91F90AED95BBD0D74722CDB256 /* Mindbox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Mindbox.debug.xcconfig; sourceTree = "<group>"; };
+		E83EECC8DB87E1B4A6091F99783B8485 /* Pods-MindboxDocsAppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MindboxDocsAppTests-dummy.m"; sourceTree = "<group>"; };
+		EE1A5451D7F16B23EDD807D670283BD5 /* LogConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LogConfiguration.swift; path = Mindbox/Utilities/Logger/LogConfiguration.swift; sourceTree = "<group>"; };
+		EEB665269D47C9A68178E61D4D8ACD8D /* CDEvent+CoreDataClass.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CDEvent+CoreDataClass.swift"; path = "Mindbox/Database/Entities/CDEvent+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F1B6E4A589E78C702619DB80B4975BC6 /* Mindbox-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Mindbox-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1188F21AB5C6E5F8110591E43CC6B4D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF9774DF9684BC6E8134051229762FC2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F9FAD21623594FF4AE7885F5332A58B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67273475F663E63234FF1F67EB6ED25E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A87604BC3B12F0B6DA7C84921AECD96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				611A4B8DCEB26E6375CF2E513803C0ED /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAABFF0D332A7882836A0843F3D35E0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				081DDB87E30B2A986279E6D3CCB501CC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09D1C59B0E58CC8694C8879A00273B0E /* Mindbox */ = {
+			isa = PBXGroup;
+			children = (
+				AEF739737D0E8E995E6D2B0A72A5C40F /* BackgroundTaskManagerProxy.swift */,
+				A3CF5471E295877EE2028B7E311A11F7 /* BackgroundTaskManagerType.swift */,
+				2ECE2D358F110D8B5E552A6A726C5E6E /* BaseResponse.swift */,
+				D122E49C5B40E7E228CCE884B127A5D2 /* BGTaskManager.swift */,
+				9D7E36AC6D39BF9FD858B1FE55822344 /* BodyDecoder.swift */,
+				2526E7DF1C8B6E90F4A226B33357208E /* BodyEncoder.swift */,
+				EEB665269D47C9A68178E61D4D8ACD8D /* CDEvent+CoreDataClass.swift */,
+				7CBA496CD09C8C89FABC0177E086DBDD /* CDEvent+CoreDataProperties.swift */,
+				879CDEB7A89DBD2C519FCCAC04C9F3B8 /* ClickNotificationManager.swift */,
+				29CC4AE006E53309AD91DA8BADC427E1 /* Constants.swift */,
+				7720072F06DEEAAD36C5F9076D544ACB /* CoreController.swift */,
+				14FB8F11A50F2F7E0E2CD1568F86852C /* DatabaseLoader.swift */,
+				C0111D0F8A80CD4BF81E53F89D6967DD /* DeliveredNotificationManager.swift */,
+				4AA1A2B837AD13B0DB69A9D043F1C895 /* DeliveredNotificationManagerError.swift */,
+				23B617473DE22EDADB200027464174EE /* DeliveryOperation.swift */,
+				A6C234BB9E2F38A981EA0508AE1D3171 /* DependencyContainer.swift */,
+				9C44403F3997BE7AB20DFE338E2EDD14 /* DependencyProvider.swift */,
+				163FD968AB18929164EFF78C7B1A1A09 /* DeviceModelHelper.swift */,
+				2A752E2FFE3A92BE0152ED0C753B1992 /* ErrorKey.swift */,
+				24CF14E529DFE7EFA13B39A302A144AA /* ErrorModel.swift */,
+				87F42A174A86E1F8C151E93CB4A69258 /* Event.swift */,
+				AD9611723023F99DB3A6BA509BD6D5C2 /* EventRepository.swift */,
+				901F0114C7B1E4FAF0A8CB2A99F91920 /* EventRoute.swift */,
+				76B9B72EEDCE229A98911567A96608DC /* EventWrapper.swift */,
+				7689E661093A1EF18B2B48B23921833F /* GuaranteedDeliveryManager.swift */,
+				7D0F5820AF0D3F0FBB8B3FEC0F8ECD76 /* GuaranteedDeliveryManager+State.swift */,
+				31BB08BFE483121C6321C46B13976D22 /* HTTPMethod.swift */,
+				AE53118168F1D8FD9B1C1950E8DF7AC4 /* HTTPTypealiases.swift */,
+				8FEC27D9D12E5EAD2DA76290F7CBE7EB /* HTTPURLResponseStatusCodeValidator.swift */,
+				0AF26B2EE54318A868022B3D42035505 /* IDFAFetcher.swift */,
+				9BBF977E9C46912A8AC7742EB052D685 /* IDFVFetcher.swift */,
+				EE1A5451D7F16B23EDD807D670283BD5 /* LogConfiguration.swift */,
+				1F6CFEB2D32140BC4B58798D950610E7 /* Logger.swift */,
+				098D218D9736A5F74B03F8E4012E3DCF /* LogManager.swift */,
+				0B968EB33D6CBAB2985AFE8678188B92 /* LogWriter.swift */,
+				76A0233DDAF736DF36D84E97F701398D /* MBConfiguration.swift */,
+				DD332E3BA9470BC476506C3ABF1AC221 /* MBDatabaseError.swift */,
+				D7D3DE68F39B94169DCDB3A3B8E66E9A /* MBDatabaseRepository.swift */,
+				B03D9A269DE4A42289D57ACF63C90433 /* MBEventRepository.swift */,
+				4FBDFE0B1D55FA42BA3418EFB1F002AF /* MBNetworkFetcher.swift */,
+				9A91D69A4C308C5F96FE7E8D1BA64A64 /* MBPersistenceStorage.swift */,
+				833B769CE0E589B52A2B1AC7F813175D /* MBPersistentContainer.swift */,
+				B2B87C4C38494FE660A23BACBD66B04A /* MBUtilitiesFetcher.swift */,
+				C8B716D3226599B3F483EAFB43C56E22 /* Mindbox.swift */,
+				7D20342AB7B6DB8C88DF4EFADE796F79 /* MindboxDelegate.swift */,
+				AA823DD89386886E4B6DEC3BB8BC0B90 /* MindboxErrors.swift */,
+				B2968FDD4323592857EDC7AE1FB4E24F /* MobileApplicationInfoUpdated.swift */,
+				3DB7D72E84E53A247561C4C8990AB6AC /* MobileApplicationInstalled.swift */,
+				23CB8EEAA59AD4D7937F746B1573FC48 /* NetworkFetcher.swift */,
+				B6B04615CD9F03EBCF5DD29247880D8C /* NotificationDecoder.swift */,
+				B9A16AD116010DC26FDD6E485262CED8 /* NotificationsPayloads.swift */,
+				AEA67493DC93432FCEF82DED997E0F60 /* NSManagedObjectContext+.swift */,
+				956404562F23B1615F03D132019C8BC8 /* PersistenceStorage.swift */,
+				2C5380A18338191894938A347B88B973 /* PushDelivered.swift */,
+				295991B682D80D170AA905D829C543AB /* Route.swift */,
+				2DD9DEC4660075226336926877C97978 /* TrackClick.swift */,
+				2224562940F9CB0F88D7608E2FC4CA4F /* UDIDValidator.swift */,
+				352036D8A7019421BFB02ADEABADBA59 /* UIBackgroundTaskManager.swift */,
+				4FF4E1838B37BA9F0363AAC7DA3134E3 /* UNAuthorizationStatusProvider.swift */,
+				D50326E9388B6CC38EA43A8BC8EE7F60 /* UNAuthorizationStatusProviding.swift */,
+				8FD46ED5E49FE0E19891EE07E0FC69A4 /* URLRequestBuilder.swift */,
+				7BA29F5E463954BBFA59115F758B46FB /* URLValidator.swift */,
+				BE29ECA9273A8AA6B8F3B52EF09CC0AB /* UtilitiesFetcher.swift */,
+				D4BC99FCFD5C39827FA5DEB11963A409 /* Resources */,
+				AC41D1228BCCC98D5710DB97ECA6554D /* Support Files */,
+			);
+			name = Mindbox;
+			path = Mindbox;
+			sourceTree = "<group>";
+		};
+		255C879DB9893C84EF8C4E9373E50FD6 /* Pods-MindboxDocsApp */ = {
+			isa = PBXGroup;
+			children = (
+				0A69D24022F031BFDAA9165B245B0B77 /* Pods-MindboxDocsApp.modulemap */,
+				AD3313CE2470A7CDFCF9CB97981189A5 /* Pods-MindboxDocsApp-acknowledgements.markdown */,
+				A6EEB4B683BB99480EF0452BF881CDE5 /* Pods-MindboxDocsApp-acknowledgements.plist */,
+				0BB60ADC23B0218526A06017B35FDB27 /* Pods-MindboxDocsApp-dummy.m */,
+				8FF827884C2976662D32E5035E71B02E /* Pods-MindboxDocsApp-frameworks.sh */,
+				036D4A1AF97ABE1172016B18C052A177 /* Pods-MindboxDocsApp-Info.plist */,
+				E0395B35DB7F8E80D6ABC7ADA446BFA5 /* Pods-MindboxDocsApp-umbrella.h */,
+				9476FC34EA5A7A43C0C948412FAE6FE8 /* Pods-MindboxDocsApp.debug.xcconfig */,
+				4D76E2408738ADC43FAACD76F68217B2 /* Pods-MindboxDocsApp.release.xcconfig */,
+			);
+			name = "Pods-MindboxDocsApp";
+			path = "Target Support Files/Pods-MindboxDocsApp";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5A46A532E445AECFDED086D9AEEC832C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				09D1C59B0E58CC8694C8879A00273B0E /* Mindbox */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6582510D59B69D9E4C62C33551839D55 /* Pods-MindboxDocsApp-MindboxDocsAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				138929F0A935E3F7F0BFB56EA11466E6 /* Pods-MindboxDocsApp-MindboxDocsAppUITests.modulemap */,
+				656706D4B53F13AB814FE53FCD98CE1E /* Pods-MindboxDocsApp-MindboxDocsAppUITests-acknowledgements.markdown */,
+				5482E62D4CE1D68B7CECEC8291FAA44E /* Pods-MindboxDocsApp-MindboxDocsAppUITests-acknowledgements.plist */,
+				AC1A66205CAEC987B5A61A29B259BBD3 /* Pods-MindboxDocsApp-MindboxDocsAppUITests-dummy.m */,
+				C0253A107A7A1AC1AC0FC22142C4B3FC /* Pods-MindboxDocsApp-MindboxDocsAppUITests-frameworks.sh */,
+				DAE6202E4FBD5C1CD2B68AD03DB9CA4D /* Pods-MindboxDocsApp-MindboxDocsAppUITests-Info.plist */,
+				596E6E7AC634790A3E684148CBEF8B26 /* Pods-MindboxDocsApp-MindboxDocsAppUITests-umbrella.h */,
+				1AE5C66364CB3526CE6A6A48C9E58338 /* Pods-MindboxDocsApp-MindboxDocsAppUITests.debug.xcconfig */,
+				CCD267FB0FD3232F2882D28333BE01AA /* Pods-MindboxDocsApp-MindboxDocsAppUITests.release.xcconfig */,
+			);
+			name = "Pods-MindboxDocsApp-MindboxDocsAppUITests";
+			path = "Target Support Files/Pods-MindboxDocsApp-MindboxDocsAppUITests";
+			sourceTree = "<group>";
+		};
+		809897292B866D3B1D5F2C88540D77CA /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				255C879DB9893C84EF8C4E9373E50FD6 /* Pods-MindboxDocsApp */,
+				6582510D59B69D9E4C62C33551839D55 /* Pods-MindboxDocsApp-MindboxDocsAppUITests */,
+				DCC50ED38F6725533F2F29B602A77B84 /* Pods-MindboxDocsAppTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		AC41D1228BCCC98D5710DB97ECA6554D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A3A10F6E2A6246F518070A6A585BEF08 /* Mindbox.modulemap */,
+				B7D5AF4922A026842711B96B4F5BF01F /* Mindbox-dummy.m */,
+				F1B6E4A589E78C702619DB80B4975BC6 /* Mindbox-Info.plist */,
+				9208F30581AE402DAFCFDC1CBB816224 /* Mindbox-prefix.pch */,
+				7CA634C0198791B2610A5559245A7515 /* Mindbox-umbrella.h */,
+				E111CD91F90AED95BBD0D74722CDB256 /* Mindbox.debug.xcconfig */,
+				8692A3CE4418DA7711AB04747965846A /* Mindbox.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Mindbox";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				5A46A532E445AECFDED086D9AEEC832C /* Pods */,
+				DE50840665C6EA8EB055F2B51B52FC32 /* Products */,
+				809897292B866D3B1D5F2C88540D77CA /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4BC99FCFD5C39827FA5DEB11963A409 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				266453AA2CCEEAA6B6B807E577D2840D /* MBDatabase.xcdatamodeld */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		DCC50ED38F6725533F2F29B602A77B84 /* Pods-MindboxDocsAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				60C24B7026F5B9C52860B8AFD2F2C8DB /* Pods-MindboxDocsAppTests.modulemap */,
+				CD9E42EC7435BB1A669AA83A59C90782 /* Pods-MindboxDocsAppTests-acknowledgements.markdown */,
+				6B8EDCFFB475BF1F32F33568F5EAC2CD /* Pods-MindboxDocsAppTests-acknowledgements.plist */,
+				E83EECC8DB87E1B4A6091F99783B8485 /* Pods-MindboxDocsAppTests-dummy.m */,
+				16F1FDC11B923B9149EFF445565E1CAC /* Pods-MindboxDocsAppTests-Info.plist */,
+				183C3E3AE257611D1609BBAD9649DA07 /* Pods-MindboxDocsAppTests-umbrella.h */,
+				B8D3FE9DDB603917B964539E8DC09CB4 /* Pods-MindboxDocsAppTests.debug.xcconfig */,
+				C68C63ACEA8337E2961583DA0B6FF120 /* Pods-MindboxDocsAppTests.release.xcconfig */,
+			);
+			name = "Pods-MindboxDocsAppTests";
+			path = "Target Support Files/Pods-MindboxDocsAppTests";
+			sourceTree = "<group>";
+		};
+		DE50840665C6EA8EB055F2B51B52FC32 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				66BB0874E6421069A7F055CB853F3247 /* Mindbox.framework */,
+				8C3E97DB7C1BEAD24F4C64862253C091 /* Pods_MindboxDocsApp.framework */,
+				C254A5C3A0485064F6B2B0B0A5703DD4 /* Pods_MindboxDocsApp_MindboxDocsAppUITests.framework */,
+				51E0A6C749F306C04156C2B78D74D77B /* Pods_MindboxDocsAppTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		19F42A65D75BF4867C5CD238842BD8CD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDE520DD9A042F80EAC68935718100BA /* Pods-MindboxDocsApp-MindboxDocsAppUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B77A128157D66676D657B704B6B482E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF7E06A6C37CB27317F43F68EFEA0CCD /* Pods-MindboxDocsApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B1F49E8D61EF3F9DBB6924A0FAE7AE3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7F80B490FAE47BB82C6BDCB1E33F290 /* Mindbox-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D000CD471B2640E0613D18829AB00099 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C63D05A200E076F0674E962DB17D5BE /* Pods-MindboxDocsAppTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		094D2C96FA0AA0D7C334C152717F21FD /* Pods-MindboxDocsApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21FB424CDD4947C6881797BBAA4D7B1E /* Build configuration list for PBXNativeTarget "Pods-MindboxDocsApp" */;
+			buildPhases = (
+				3B77A128157D66676D657B704B6B482E /* Headers */,
+				171D32EFBED1B471B62CB76AE92DCC0A /* Sources */,
+				9A87604BC3B12F0B6DA7C84921AECD96 /* Frameworks */,
+				39A5005E2B018A44B5EC275C965C039F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70821106A20FF6EACBF34637736F6F9E /* PBXTargetDependency */,
+			);
+			name = "Pods-MindboxDocsApp";
+			productName = "Pods-MindboxDocsApp";
+			productReference = 8C3E97DB7C1BEAD24F4C64862253C091 /* Pods_MindboxDocsApp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4939E33BE794219FB425B5B4CDCBA75C /* Pods-MindboxDocsApp-MindboxDocsAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EF6424A8C0B1F5B6AEEBCE41B6E2955 /* Build configuration list for PBXNativeTarget "Pods-MindboxDocsApp-MindboxDocsAppUITests" */;
+			buildPhases = (
+				19F42A65D75BF4867C5CD238842BD8CD /* Headers */,
+				CC256DB6AFB68D1EA757843FA2B28774 /* Sources */,
+				1188F21AB5C6E5F8110591E43CC6B4D6 /* Frameworks */,
+				2476041FBA9248AC7B4F2276ED88707C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05BE3034DDBA709A534090C7B856D8A4 /* PBXTargetDependency */,
+			);
+			name = "Pods-MindboxDocsApp-MindboxDocsAppUITests";
+			productName = "Pods-MindboxDocsApp-MindboxDocsAppUITests";
+			productReference = C254A5C3A0485064F6B2B0B0A5703DD4 /* Pods_MindboxDocsApp_MindboxDocsAppUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CECD15C793DE086A6261A911DEEA728E /* Pods-MindboxDocsAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2E3570DF70B07139A761CBE3937EDB3 /* Build configuration list for PBXNativeTarget "Pods-MindboxDocsAppTests" */;
+			buildPhases = (
+				D000CD471B2640E0613D18829AB00099 /* Headers */,
+				2ED1654CC4A7F31D5CE331FBD86EE1DD /* Sources */,
+				1F9FAD21623594FF4AE7885F5332A58B /* Frameworks */,
+				D80C38DBE92570BACFAA3129BD09C8CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A11AE5B32FF1A0F21A1BA927F394CD3E /* PBXTargetDependency */,
+			);
+			name = "Pods-MindboxDocsAppTests";
+			productName = "Pods-MindboxDocsAppTests";
+			productReference = 51E0A6C749F306C04156C2B78D74D77B /* Pods_MindboxDocsAppTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F09FD53C0D7355712413F61F1C377646 /* Mindbox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 560A7E3A847AF05FB523F6CAFFC9E79B /* Build configuration list for PBXNativeTarget "Mindbox" */;
+			buildPhases = (
+				6B1F49E8D61EF3F9DBB6924A0FAE7AE3 /* Headers */,
+				A302DD6E866B5825886F60DB1E3D4FDB /* Sources */,
+				CAABFF0D332A7882836A0843F3D35E0E /* Frameworks */,
+				AB58BF5C1497ADC80128A5C13ABBEADA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mindbox;
+			productName = Mindbox;
+			productReference = 66BB0874E6421069A7F055CB853F3247 /* Mindbox.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = DE50840665C6EA8EB055F2B51B52FC32 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F09FD53C0D7355712413F61F1C377646 /* Mindbox */,
+				094D2C96FA0AA0D7C334C152717F21FD /* Pods-MindboxDocsApp */,
+				4939E33BE794219FB425B5B4CDCBA75C /* Pods-MindboxDocsApp-MindboxDocsAppUITests */,
+				CECD15C793DE086A6261A911DEEA728E /* Pods-MindboxDocsAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2476041FBA9248AC7B4F2276ED88707C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39A5005E2B018A44B5EC275C965C039F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB58BF5C1497ADC80128A5C13ABBEADA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D80C38DBE92570BACFAA3129BD09C8CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		171D32EFBED1B471B62CB76AE92DCC0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E06D875CD86FA7E362EB53DBF33BB20 /* Pods-MindboxDocsApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2ED1654CC4A7F31D5CE331FBD86EE1DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28C64BAA56184A9FB94433AE307C5D60 /* Pods-MindboxDocsAppTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A302DD6E866B5825886F60DB1E3D4FDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67D066AD735E32A748CE045E3A123447 /* BackgroundTaskManagerProxy.swift in Sources */,
+				5E753071DB51C8CC7E9631F3C085D0EE /* BackgroundTaskManagerType.swift in Sources */,
+				42A61216B15D2D130782F72ABC225B17 /* BaseResponse.swift in Sources */,
+				B949FD6753D090442C9F860C8BAA4C09 /* BGTaskManager.swift in Sources */,
+				35AA27878A0B8B389D2C939A8109B1AA /* BodyDecoder.swift in Sources */,
+				75766CA6F293483885E60BE3B33EFDC3 /* BodyEncoder.swift in Sources */,
+				1DB9C64D7AED80100EC30F08D2226E1C /* CDEvent+CoreDataClass.swift in Sources */,
+				4D4FD5324AFD9753602D64C520A41B3F /* CDEvent+CoreDataProperties.swift in Sources */,
+				2973EE4F147404BEED21066A02DBC1D3 /* ClickNotificationManager.swift in Sources */,
+				921E99741C928886CC49D172DF64907D /* Constants.swift in Sources */,
+				66928832574C484A3D71BD275E91BAA2 /* CoreController.swift in Sources */,
+				8792C1BB5B276480DAEF183CDA9EA07D /* DatabaseLoader.swift in Sources */,
+				5885C6C5127DD7455A53B7809524AEC8 /* DeliveredNotificationManager.swift in Sources */,
+				0E2CAA7D4991783D18032AE5DD83105B /* DeliveredNotificationManagerError.swift in Sources */,
+				6FA243AACC34BDE94A5F698E5E03A01B /* DeliveryOperation.swift in Sources */,
+				9B74AFA4C08FC3F4BC83AC92B0D151ED /* DependencyContainer.swift in Sources */,
+				B86216A9B0316B0FC9C6A514C74F2715 /* DependencyProvider.swift in Sources */,
+				4D0A4311246AE6815DBEBCB285D0FF93 /* DeviceModelHelper.swift in Sources */,
+				F0BB4FB390EB4A66A85BCA8ABBB97791 /* ErrorKey.swift in Sources */,
+				E136AE878A2F17CFC9EE9426623A14DA /* ErrorModel.swift in Sources */,
+				231CF1FED301FE9B685B93B7738AA0E0 /* Event.swift in Sources */,
+				FED3D56C9534ED79F2B6A9C7E6B508A5 /* EventRepository.swift in Sources */,
+				B0FEC480AB9639B7D38FDA1F70994D1E /* EventRoute.swift in Sources */,
+				0C4B02DC05E2EE5515775BE18358A712 /* EventWrapper.swift in Sources */,
+				0207618FF4D4C96A50B7503E8712E336 /* GuaranteedDeliveryManager+State.swift in Sources */,
+				F29F394557E1613F2EA423CDC9F0C415 /* GuaranteedDeliveryManager.swift in Sources */,
+				17D20AC5A7B09DB4D7BC50E836816494 /* HTTPMethod.swift in Sources */,
+				EC9E4A9740FCAD9FF5FE1081424187D3 /* HTTPTypealiases.swift in Sources */,
+				60B46EFACB96833CDBAEBBD8F83470FE /* HTTPURLResponseStatusCodeValidator.swift in Sources */,
+				C21A0B70D4F16810500265BF24A28A58 /* IDFAFetcher.swift in Sources */,
+				72C5B54EAC0B476733C537EF130B050B /* IDFVFetcher.swift in Sources */,
+				ECF9561EF7F2E09B6B1F395DD379EEF5 /* LogConfiguration.swift in Sources */,
+				2FFBB277D246DA7E29DC90D794D70A82 /* Logger.swift in Sources */,
+				C051BED67A53B6D0CD659C2E3C791034 /* LogManager.swift in Sources */,
+				95511373AC7D9504E683C963C2883E47 /* LogWriter.swift in Sources */,
+				8383CB4DE6E2E42EA3B8DCE3A987BDC2 /* MBConfiguration.swift in Sources */,
+				F1FF88A4DA0F3B8BC5B8D0C4E4AC0991 /* MBDatabase.xcdatamodeld in Sources */,
+				5678CB009E411680F256E0C9323ABD6A /* MBDatabaseError.swift in Sources */,
+				45E72EA694BBC0169F77A4C4432694EC /* MBDatabaseRepository.swift in Sources */,
+				F2D50118A52B0E35841607AC062E7A9B /* MBEventRepository.swift in Sources */,
+				966366CC89BD570614A5A41EFAACF236 /* MBNetworkFetcher.swift in Sources */,
+				87557CA60A8AE0F34D4A7583527DC740 /* MBPersistenceStorage.swift in Sources */,
+				F74DC76A4346BB3B67D28F162DA2188B /* MBPersistentContainer.swift in Sources */,
+				58E6C3629EDD52E576D3CA7A408B2B17 /* MBUtilitiesFetcher.swift in Sources */,
+				D326BF61C892CA47DF0D13F916FDB1ED /* Mindbox-dummy.m in Sources */,
+				647C20B9C940FD4F4FECDBFD3497D055 /* Mindbox.swift in Sources */,
+				A09156E1356A1E7E813484AEABED95BF /* MindboxDelegate.swift in Sources */,
+				2740866588835E859F66724DEA52AD30 /* MindboxErrors.swift in Sources */,
+				B6A1BF9667A49DCA63E45718C9D7CAFE /* MobileApplicationInfoUpdated.swift in Sources */,
+				949D834036829A0A11DD3D2948D537F6 /* MobileApplicationInstalled.swift in Sources */,
+				E5DE7CD51F7EA27A48925DB07CD95F09 /* NetworkFetcher.swift in Sources */,
+				00CC3F9BE64CAF5D547422BA17926C33 /* NotificationDecoder.swift in Sources */,
+				9F93773357C745E761C591E15D5F598E /* NotificationsPayloads.swift in Sources */,
+				08B168AF4F5C1B54D1B35129DB7EC97F /* NSManagedObjectContext+.swift in Sources */,
+				D08B38B1AA0D270AC15230DF4566DEAB /* PersistenceStorage.swift in Sources */,
+				C390600015681A9555F3521416744162 /* PushDelivered.swift in Sources */,
+				14766D309215C66A0A6FE679A3794439 /* Route.swift in Sources */,
+				F4E29D9F2798B8B7B21E20116BC62AD9 /* TrackClick.swift in Sources */,
+				0F7A0AC46FD5B3FBCBF4FDC53A3A515D /* UDIDValidator.swift in Sources */,
+				97F97798D5784E3E45874905AC24D3A3 /* UIBackgroundTaskManager.swift in Sources */,
+				39160E7D0D0823F4E54EDC34230733AD /* UNAuthorizationStatusProvider.swift in Sources */,
+				2924EB64B783140D5CAA1B5EF68208BE /* UNAuthorizationStatusProviding.swift in Sources */,
+				FEBF542B60D2BFC9D251E6C9ECCD8BBC /* URLRequestBuilder.swift in Sources */,
+				8592BB63DD2A0B9298B2037915E81B98 /* URLValidator.swift in Sources */,
+				AEBC8D40B98A73A45D0AA1B98CBDF3FC /* UtilitiesFetcher.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC256DB6AFB68D1EA757843FA2B28774 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C1427A9748687E84E6105C7139C0D63 /* Pods-MindboxDocsApp-MindboxDocsAppUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		05BE3034DDBA709A534090C7B856D8A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Mindbox;
+			target = F09FD53C0D7355712413F61F1C377646 /* Mindbox */;
+			targetProxy = 6F3659973076472FF09CD20E1B733577 /* PBXContainerItemProxy */;
+		};
+		70821106A20FF6EACBF34637736F6F9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Mindbox;
+			target = F09FD53C0D7355712413F61F1C377646 /* Mindbox */;
+			targetProxy = AB4A85ADEB8BBC5874B21E995F4556FF /* PBXContainerItemProxy */;
+		};
+		A11AE5B32FF1A0F21A1BA927F394CD3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-MindboxDocsApp";
+			target = 094D2C96FA0AA0D7C334C152717F21FD /* Pods-MindboxDocsApp */;
+			targetProxy = 5AF52690DAF69E17C6739F971B5EB0DD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		01C8AACC151579B12FF32F981C0D30D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D76E2408738ADC43FAACD76F68217B2 /* Pods-MindboxDocsApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MindboxDocsApp/Pods-MindboxDocsApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MindboxDocsApp/Pods-MindboxDocsApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		518136CB9777AB4AC3A5A1535BD876CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8D3FE9DDB603917B964539E8DC09CB4 /* Pods-MindboxDocsAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MindboxDocsAppTests/Pods-MindboxDocsAppTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MindboxDocsAppTests/Pods-MindboxDocsAppTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5184B131AA3A1F1C7369346C66303034 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCD267FB0FD3232F2882D28333BE01AA /* Pods-MindboxDocsApp-MindboxDocsAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MindboxDocsApp-MindboxDocsAppUITests/Pods-MindboxDocsApp-MindboxDocsAppUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MindboxDocsApp-MindboxDocsAppUITests/Pods-MindboxDocsApp-MindboxDocsAppUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5D78C6065FB97D73D7B5BBF89337BD04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8692A3CE4418DA7711AB04747965846A /* Mindbox.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Mindbox/Mindbox-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Mindbox/Mindbox-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Mindbox/Mindbox.modulemap";
+				PRODUCT_MODULE_NAME = Mindbox;
+				PRODUCT_NAME = Mindbox;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		71243899B61152433AAE34EE86456EE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		75D70EEEA0A456E14F7338A7F342964E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		81A27C78E16361573561313896977DD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E111CD91F90AED95BBD0D74722CDB256 /* Mindbox.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Mindbox/Mindbox-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Mindbox/Mindbox-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Mindbox/Mindbox.modulemap";
+				PRODUCT_MODULE_NAME = Mindbox;
+				PRODUCT_NAME = Mindbox;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A07A842BE9564E90A0618474011C3D6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AE5C66364CB3526CE6A6A48C9E58338 /* Pods-MindboxDocsApp-MindboxDocsAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MindboxDocsApp-MindboxDocsAppUITests/Pods-MindboxDocsApp-MindboxDocsAppUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MindboxDocsApp-MindboxDocsAppUITests/Pods-MindboxDocsApp-MindboxDocsAppUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D1B1F519E2D1D2DFB9D79135051432D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9476FC34EA5A7A43C0C948412FAE6FE8 /* Pods-MindboxDocsApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MindboxDocsApp/Pods-MindboxDocsApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MindboxDocsApp/Pods-MindboxDocsApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EAF9D72210696242DF5C0F7DBCDFFE27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C68C63ACEA8337E2961583DA0B6FF120 /* Pods-MindboxDocsAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MindboxDocsAppTests/Pods-MindboxDocsAppTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MindboxDocsAppTests/Pods-MindboxDocsAppTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		21FB424CDD4947C6881797BBAA4D7B1E /* Build configuration list for PBXNativeTarget "Pods-MindboxDocsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1B1F519E2D1D2DFB9D79135051432D0 /* Debug */,
+				01C8AACC151579B12FF32F981C0D30D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75D70EEEA0A456E14F7338A7F342964E /* Debug */,
+				71243899B61152433AAE34EE86456EE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		560A7E3A847AF05FB523F6CAFFC9E79B /* Build configuration list for PBXNativeTarget "Mindbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81A27C78E16361573561313896977DD7 /* Debug */,
+				5D78C6065FB97D73D7B5BBF89337BD04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EF6424A8C0B1F5B6AEEBCE41B6E2955 /* Build configuration list for PBXNativeTarget "Pods-MindboxDocsApp-MindboxDocsAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A07A842BE9564E90A0618474011C3D6F /* Debug */,
+				5184B131AA3A1F1C7369346C66303034 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2E3570DF70B07139A761CBE3937EDB3 /* Build configuration list for PBXNativeTarget "Pods-MindboxDocsAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				518136CB9777AB4AC3A5A1535BD876CE /* Debug */,
+				EAF9D72210696242DF5C0F7DBCDFFE27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		266453AA2CCEEAA6B6B807E577D2840D /* MBDatabase.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				81A32E4DF753CCD40B91B8B21817291C /* MBDatabase.xcdatamodel */,
+			);
+			name = MBDatabase.xcdatamodeld;
+			path = Mindbox/Database/MBDatabase.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

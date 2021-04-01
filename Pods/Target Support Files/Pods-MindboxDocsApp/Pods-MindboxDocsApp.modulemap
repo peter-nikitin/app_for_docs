@@ -1,0 +1,6 @@
+framework module Pods_MindboxDocsApp {
+  umbrella header "Pods-MindboxDocsApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
