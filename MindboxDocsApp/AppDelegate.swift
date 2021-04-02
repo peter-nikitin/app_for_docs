@@ -30,8 +30,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         
         do {
             let configuration = try MBConfiguration(
-                endpoint: "api.mindbox.ru",
-                domain: "mpush-test-ios-test",
+                endpoint: "mpush-test-ios-test",
+                domain: "api.mindbox.ru",
                 subscribeCustomerIfCreated: true
             )
             
@@ -43,8 +43,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
             errorMessage = error.localizedDescription
         }
         
+        print("After Mindbox.shared.initialization");
         Mindbox.shared.getDeviceUUID {
-            value in print(value)
+            value in print("MindboxDeviceUUID: \(value)")
         }
         
         print(errorMessage);

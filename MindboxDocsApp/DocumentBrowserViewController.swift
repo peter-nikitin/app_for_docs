@@ -6,12 +6,18 @@
 //
 
 import UIKit
-
+import Mindbox
 
 class DocumentBrowserViewController: UIDocumentBrowserViewController, UIDocumentBrowserViewControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print("DocumentBrowserViewController viewDidLoad")
+        
+        Mindbox.shared.getDeviceUUID {
+            value in print("UUID: \(value)")
+        }
         
         delegate = self
         

@@ -11,7 +11,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   Mindbox:
-    :commit: f056a618ccc4aaa09697eab8e8140b58888561df
+    :commit: 2b9d2ecb42304a6aec34ead12c10425db03add20
     :git: https://github.com/mindbox-moscow/ios-sdk.git
 
 SPEC CHECKSUMS:
