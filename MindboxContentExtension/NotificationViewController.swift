@@ -9,6 +9,7 @@ import UIKit
 import UserNotifications
 import UserNotificationsUI
 
+@available(iOSApplicationExtension 12.0, *)
 class NotificationViewController: UIViewController, UNNotificationContentExtension {
 
     @IBOutlet var label: UILabel?

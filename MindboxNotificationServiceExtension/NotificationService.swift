@@ -6,6 +6,7 @@
 //
 
 import UserNotifications
+import Mindbox
 
 class NotificationService: UNNotificationServiceExtension {
 
@@ -14,11 +15,20 @@ class NotificationService: UNNotificationServiceExtension {
 
     override func didReceive(_ request: UNNotificationRequest, withContentHandler contentHandler: @escaping (UNNotificationContent) -> Void) {
         self.contentHandler = contentHandler
-        bestAttemptContent = (request.content.mutableCopy() as? UNMutableNotificationContent)
         
+       
+        bestAttemptContent = (request.content.mutableCopy() as? UNMutableNotificationContent)
+        print(bestAttemptContent ?? "No Content in Push")
         if let bestAttemptContent = bestAttemptContent {
-            // Modify the notification content here...
-            bestAttemptContent.title = "\(bestAttemptContent.title) [modified]"
+            // Передача данных о полученном пуше в Mindbox
+            
+            print(bestAttemptContent.title)
+            if Mindbox.shared.pushDelivered(request: request) {
+                bestAttemptContent.categoryIdentifier = "MindBoxCategoryIdentifier"
+                bestAttemptContent.title = "\(bestAttemptContent.title) [Send status success]"
+            } else {
+                bestAttemptContent.title = "\(bestAttemptContent.title) [Send status failed]"
+            }
             
             contentHandler(bestAttemptContent)
         }
@@ -31,5 +41,4 @@ class NotificationService: UNNotificationServiceExtension {
             contentHandler(bestAttemptContent)
         }
     }
-
 }
