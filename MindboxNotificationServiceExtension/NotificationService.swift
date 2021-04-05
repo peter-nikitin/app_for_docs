@@ -16,7 +16,7 @@ class NotificationService: UNNotificationServiceExtension {
     override func didReceive(_ request: UNNotificationRequest, withContentHandler contentHandler: @escaping (UNNotificationContent) -> Void) {
         self.contentHandler = contentHandler
         
-       
+       print("MindboxNotificationServiceExtension")
         bestAttemptContent = (request.content.mutableCopy() as? UNMutableNotificationContent)
         print(bestAttemptContent ?? "No Content in Push")
         if let bestAttemptContent = bestAttemptContent {
@@ -24,7 +24,7 @@ class NotificationService: UNNotificationServiceExtension {
             
             print(bestAttemptContent.title)
             if Mindbox.shared.pushDelivered(request: request) {
-                bestAttemptContent.categoryIdentifier = "MindBoxCategoryIdentifier"
+                bestAttemptContent.categoryIdentifier = "Mindbox.$(PRODUCT_BUNDLE_IDENTIFIER).CategoryIdentifier"
                 bestAttemptContent.title = "\(bestAttemptContent.title) [Send status success]"
             } else {
                 bestAttemptContent.title = "\(bestAttemptContent.title) [Send status failed]"
@@ -37,6 +37,7 @@ class NotificationService: UNNotificationServiceExtension {
     override func serviceExtensionTimeWillExpire() {
         // Called just before the extension will be terminated by the system.
         // Use this as an opportunity to deliver your "best attempt" at modified content, otherwise the original push payload will be used.
+        print("serviceExtensionTimeWillExpire")
         if let contentHandler = contentHandler, let bestAttemptContent =  bestAttemptContent {
             contentHandler(bestAttemptContent)
         }

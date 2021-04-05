@@ -49,8 +49,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         }
         
         print(errorMessage);
+        
+        registerForRemoteNotifications()
+        if #available(iOS 13.0, *) {
+            Mindbox.shared.registerBGTasks()
+        }
+        UIApplication.shared.setMinimumBackgroundFetchInterval(UIApplication.backgroundFetchIntervalMinimum)
     
         return true
+    }
+    
+    func application(_ application: UIApplication, performFetchWithCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        Mindbox.shared.application(application, performFetchWithCompletionHandler: completionHandler)
     }
     
     //    MARK: registerForRemoteNotifications
@@ -72,7 +82,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     //    MARK: didReceive response
     
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
-        let request = response.notification.request
+        print("userNotificationCenter(_ center: UNUserNotificationCenter")
         Mindbox.shared.pushClicked(response: response)
         completionHandler()
     }
